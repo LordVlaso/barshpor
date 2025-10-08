@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Техкарты - главная</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Евробир - техкарты</h1>
+      <p class="subtitle">Поиск, добавление и редактирование коктейлей</p>
+    </header>
+
+    <input 
+      id="search"
+      type="text"
+      placeholder="Поиск по названию коктейля..."
+    />
+
+    <div id="cocktail-list" class="list"></div>
+
+    <section class="form-section">
+      <h2 id="form-title">Добавить новый коктейль</h2>
+      <form id="cocktail-form">
+        <input type="text" id="name" placeholder="Название" required />
+        <div class="row">
+          <input type="text" id="glass" placeholder="Тип бокала" />
+          <input type="text" id="category" placeholder="Категория" />
+        </div>
+        <textarea
+          id="ingredients"
+          placeholder="Ингредиенты (по строкам, формат: Название: количество)"
+        ></textarea>
+        <textarea id="instructions" placeholder="Приготовление"></textarea>
+        <button type="submit" id="submit-btn">Добавить коктейль</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
